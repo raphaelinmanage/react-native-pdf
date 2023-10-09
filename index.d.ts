@@ -7,7 +7,7 @@
  */
 
 import * as React from 'react';
-import * as ReactNative from 'react-native';
+import {ViewStyle, StyleProp} from 'react-native';
 
 export type TableContent = {
     children: TableContent[],
@@ -28,7 +28,7 @@ export type Source = {
 };
 
 interface Props {
-    style?: ReactNative.StyleProp<ReactNative.ViewStyle>,
+    style?: StyleProp<ViewStyle>,
     source: Source | number,
     page?: number,
     scale?: number,
